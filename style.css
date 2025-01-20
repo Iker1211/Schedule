@@ -77,4 +77,10 @@
   border-color: #454d55;
 }
 
+.important {
+  text-align: center;
 
+  b {
+    margin-top: auto;
+  }
+}
