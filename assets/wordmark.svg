@@ -26,14 +26,14 @@
 
         <svg width="300" height="40" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
             <!-- Yellow circle -->
-            <circle cx="-80" cy="20" r="20" fill="var(--yellow)" />
+            <circle cx="-80" cy="20" r="10" fill="var(--yellow)" />
             
             <!-- "The 42" text -->
             <text
                 x="-50"
                 y="30"
                 font-family="var(--font-family)"
-                font-size="40"
+                font-size="20"
                 font-weight="bold"
                 fill="var(--blue)"
                 text-anchor="start"
