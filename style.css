@@ -1,0 +1,80 @@
+:root {
+    --violet: #40295E; /* Probar uno más oscuro */
+    --blue: #13222E;
+    --white: #F5F5F5;
+    --black: #1A1A1A;
+    --gray: #5A5A5A;
+    --yellow: #E3C200; 
+    --line-height: 1.6;
+    --font-size-base: 1rem;
+    --font-size-md: clamp(0.625rem, 0.305vw + 0.55rem, 0.79rem); /* Half of the original values */
+    --font-size-lg: clamp(0.975rem, 0.625vw + 0.82rem, 1.32rem); /* Increased by a quarter */
+    --font-size-xl: clamp(1.525rem, 1.4875vw + 1.15625rem, 2.34375rem); /* Half of the original values */
+    --font-family: 'Arial', sans-serif;
+  }
+
+  html {
+    font-family: var(--font-family);
+  }
+
+  body {
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+/* Estilo de tabla Bootstrap */
+.table {
+  margin: auto;
+  margin-top: 1rem;
+  width: 75%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+  background-color: var(--yellow);
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.thead-dark th {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #454d55;
+}
+
+
