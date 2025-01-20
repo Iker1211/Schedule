@@ -3,7 +3,7 @@ const hour = document.querySelectorAll(".hour");
 let array = Array.from(hour);
 
 let current_index = 0;
-let count = 60;
+let count = 3600;
 
 function change_color(element) {
     element.style.backgroundColor = 'var(--gray)';
@@ -24,7 +24,7 @@ function start_timer() {
 
       current_index++;
 
-      count = 60;
+      count = 3600;
   
       if (current_index >= array.length) {
         clearInterval(timer);
