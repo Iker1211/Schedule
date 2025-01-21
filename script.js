@@ -10,8 +10,10 @@ function change_color(element) {
     element.style.backgroundColor = 'var(--gray)';
 }
 
-btn.addEventListener('click', () => {
-  toggle = !toggle;
+btn.forEach( element => {
+  element.addEventListener('click', (event) => {
+    toggle = !toggle;
+  });
 });
 
 function start_timer() {
