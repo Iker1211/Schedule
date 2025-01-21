@@ -5,12 +5,11 @@ let array = Array.from(hour);
 let current_index = 0;
 let count = 3600;
 
+let alarm = new Audio('assets/sounds/funny-alarm.mp3');
+alarm.play();
+
 function change_color(element) {
     element.style.backgroundColor = 'var(--gray)';
-}
-
-function good_sound(){
-
 }
 
 function start_timer() {
