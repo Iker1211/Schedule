@@ -1,7 +1,8 @@
-
+const btn = document.querySelector(".button-3");
 const hour = document.querySelectorAll(".hour");
+
+let toggle = false;
 let array = Array.from(hour);
-console.log(array.length);
 let current_index = 0;
 let count = 3600;
 
@@ -9,13 +10,21 @@ function change_color(element) {
     element.style.backgroundColor = 'var(--gray)';
 }
 
-function start_timer() {
-  let alarm = new Audio('assets/sounds/alarm.mp3');
+btn.addEventListener('click', () => {
+  toggle = !toggle;
+});
 
+function start_timer() {
+
+  let alarm = new Audio('assets/sounds/alarm.mp3');
   let go_to_sleep = new Audio('assets/sounds/sleep-spell.mp3')
 
   const timer = setInterval(function() {
-    count--;
+    if (!toggle) {
+      count--;
+    } else {
+      count++;
+    }
     console.log(count); //see
 
     if (count === 0 && current_index < array.length) {
