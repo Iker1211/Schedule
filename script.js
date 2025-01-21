@@ -1,4 +1,4 @@
-const btn = document.querySelector(".button-3");
+const btn = document.querySelectorAll(".button-3");
 const hour = document.querySelectorAll(".hour");
 
 let toggle = false;
