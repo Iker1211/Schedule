@@ -4,25 +4,25 @@
     --white: #F5F5F5;
     --black: #1A1A1A;
     --gray: #5A5A5A;
-    --yellow: #E3C200; 
+    --yellow: #E3C200;
     --line-height: 1.6;
     --font-size-base: 1rem;
     --font-size-md: clamp(0.625rem, 0.305vw + 0.55rem, 0.79rem); /* Half of the original values */
     --font-size-lg: clamp(0.975rem, 0.625vw + 0.82rem, 1.32rem); /* Increased by a quarter */
     --font-size-xl: clamp(1.525rem, 1.4875vw + 1.15625rem, 2.34375rem); /* Half of the original values */
     --font-family: 'Arial', sans-serif;
-  }
+}
 
-  body {
+body {
     font-family: var(--font-family);
-  }
+}
 
-  .container {
+.container {
     padding: 1rem;
     margin: 0 auto;
-  }
-  
-  .button-3 {
+}
+
+.button-3 {
     appearance: none;
     background-color: #2ea44f;
     border: 1px solid rgba(27, 31, 35, .15);
@@ -30,9 +30,8 @@
     box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
     box-sizing: border-box;
     color: #fff;
-    cursor: pointer;
     display: inline-block;
-    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
@@ -40,95 +39,87 @@
     position: relative;
     text-align: center;
     text-decoration: none;
-    user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
     white-space: nowrap;
-  }
-  
-  .button-3:focus:not(:focus-visible, .focus-visible) {
-    box-shadow: none;
-    outline: none;
-  }
-  
-  .button-3:hover {
-    background-color: #2c974b;
-  }
-  
-  .button-3:focus {
-    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
-    outline: none;
-  }
-  
-  .button-3:disabled {
-    background-color: #94d3a2;
-    border-color: rgba(27, 31, 35, .1);
-    color: rgba(255, 255, 255, .8);
-    cursor: default;
-  }
-  
-  .button-3:active {
-    background-color: #298e46;
-    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
-  }
+
+    &:focus {
+        box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+        outline: none;
+
+        &:not(:focus-visible, .focus-visible) {
+            box-shadow: none;
+            outline: none;
+        }
+    }
+
+    &:hover {
+        background-color: #2c974b;
+    }
+
+    &:disabled {
+        background-color: #94d3a2;
+        border-color: rgba(27, 31, 35, .1);
+        color: rgba(255, 255, 255, .8);
+        cursor: default;
+    }
+
+    &:active {
+        background-color: #298e46;
+        box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+    }
+}
 
 /* Estilo de tabla Bootstrap */
 .table {
-  width: 75%;
-  margin: 1rem auto;
-  color: #212529;
+    width: 75%;
+    margin: 1rem auto;
+    color: #212529;
 }
 
-.table th,
-.table td {
-  padding: 0.75rem;
-  vertical-align: middle;
-  border-top: 1px solid #dee2e6;
+.table:where(th, td) {
+    padding: 0.75rem;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
 }
 
 td {
-  vertical-align: middle;
+    vertical-align: middle;
 }
 
 .table thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
-  background-color: var(--yellow);
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: var(--yellow);
 }
 
 .table tbody + tbody {
-  border-top: 2px solid #dee2e6;
+    border-top: 2px solid #dee2e6;
 }
 
 .table-bordered {
-  border: 1px solid #dee2e6;
+    border: 1px solid #dee2e6;
 }
 
-.table-bordered th,
-.table-bordered td {
-  border: 1px solid #dee2e6;
+.table-bordered:where(th, td) {
+    border: 1px solid #dee2e6;
 }
 
-.table-bordered thead th,
-.table-bordered thead td {
-  border-bottom-width: 2px;
+.table-bordered thead:where(th, td) {
+    border-bottom-width: 2px;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .thead-dark th {
-  color: #fff;
-  background-color: #343a40;
-  border-color: #454d55;
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
 }
 
 .important {
-  text-align: center;
-
-  b {
-    margin-top: auto;
-  }
+    text-align: center;
 }
