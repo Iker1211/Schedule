@@ -52,7 +52,7 @@
     white-space: nowrap;
   }
   
-  .button-3:focus:not(:focus-visible):not(.focus-visible) {
+  .button-3:focus:not(:focus-visible, .focus-visible) {
     box-shadow: none;
     outline: none;
   }
