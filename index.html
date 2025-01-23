@@ -2,116 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <link href="assets/logo.svg" rel="icon" type="image/svg+xml"/>
     <title>Schedule</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" rel="stylesheet">
 </head>
 <body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <script src="script.js" defer></script>
-    <link rel="icon" type="image/svg+xml" href="assets/logo.svg"/>
-    <title>The 42 Web Developer Compass</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-</head>
-<body>
-    <div class="container">
-        <a href="https://www.iker42.blog/" target="_blank" rel="noreferrer"><img src="assets/wordmark.svg" alt="42 logo" class="img-fluid"></a>
-        <table class="table">
-            <thead>
-                <tr>
-                  <th scope="col">Hora</th>
-                  <th scope="col">Materia</th>
-                  <th scope="col">Lunes</th>
-                  <th scope="col">Martes</th>
-                  <th scope="col">Miércoles</th>
-                  <th scope="col">Jueves</ht>
-                  <th scope="col">Viernes</ht>
-                  <th scope="col">Sábado</ht>
-                  <th scope="col">Domingo</ht>
-                </tr>
-              </thead>
-            <tbody>
-              <tr>
-                <th scope="row" class="hour hour0" value="0">0</th>
-                <th><b></b>English</td>
-                <td>Reading</td>
-                <td>Reading</td>
-                <td>Listening</td>
-                <td>Speaking</td>
-                <td>Speaking</td>
-                <td>Writing</td>
-                <td>Writing</td>
-              </tr>
-              <tr>
-                <th scope="row" class="hour hour1" value="1">1</th>
-                <td><b>English</b></td>
-                <td>Writing</td>
-                <td>Writing</td>
-                <td>Listening</td>
-                <td>Reading</td>
-                <td>Reading</td>
-                <td>Speaking</td>
-                <td>Speaking</td>
-              </tr>
-              <tr>
-                <th scope="row" class="hour hour2" value="2">2</th>
-                <td><b>Programación</b></td>
-                <td class="important" colspan="7" rowspan="4" style="background-color: var(--violet); color: var(--white)"><b>¿Cómo sacar una aplicación de Android?</b></td>
-              </tr>
-              <tr>
-                <th scope="row" class="hour hour3" value="3">3</th>
-                <td><b>Programación</b></td>
-              </tr>
-              <tr>
-                <th scope="row" class="hour hour4" value="4">4</th>
-                <td><b>Programación</b></td>
-              </tr>
-              <tr>
-                <th scope="row" class="hour hour5" value="5">5</th>
-                <td><b>Programación</b></td>
-              </tr>
-              <tr>
-                <th scope="row" class="hour hour6" value="6">6</th>
-                <td><b>Programación</b></td>
-                <td class="important" colspan="7" rowspan="4" style="background-color: var(--yellow); color: var(--black)"><b>¿Cómo sacar una aplicación de IOS?</b></td>
-              </tr>
-              <tr>
-                <th scope="row" class="hour hour7" value="7">7</th>
-                <td><b>Programación</b></td>
-              </tr>
-              <tr>
-                <th scope="row" class="hour hour8" value="8">8</th>
-                <td><b>Programación</b></td>
-              </tr>
-              <tr>
-                <th scope="row" class="hour hour9" value="9">9</th>
-                <td><b>Programación</b></td>
-              </tr>
-              <tr>
-                <th scope="row" class="hour hour10" value="10">10</th>
-                <td><b>Programación</b></td>
-                <td class="important" colspan="7" rowspan="2" style="background-color: var(--blue); color: var(--white)"><b>Buy me a coffe</b></td>
-              </tr>
-              <tr>
-                <th scope="row" class="hour hour11" value="11">11</th>
-                <td><b>Programación</b></td>
-              </tr>
-            </tbody>
-            <caption>
-              Schedule
-          </caption>
-          </table>
-          <button class="button-3">¡Voy a comer!</button> <!--Add sound for the buttons-->
-          <button class="button-3">¡Voy a caminar!</button>
-          <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="velezlucas1" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-    </div>
-</body>
-</html>
+<div class="container">
+    <a href="https://www.iker42.blog/" rel="noreferrer noopener" target="_blank">
+        <img alt="42 logo" class="img-fluid" src="assets/wordmark.svg">
+    </a>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Hora</th>
+            <th scope="col">Materia</th>
+            <th scope="col">Lunes</th>
+            <th scope="col">Martes</th>
+            <th scope="col">Miércoles</th>
+            <th scope="col">Jueves</th>
+            <th scope="col">Viernes</th>
+            <th scope="col">Sábado</th>
+            <th scope="col">Domingo</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th class="hour hour0" scope="row">0</th>
+            <th><strong>English</strong></th>
+            <td>Reading</td>
+            <td>Reading</td>
+            <td>Listening</td>
+            <td>Speaking</td>
+            <td>Speaking</td>
+            <td>Writing</td>
+            <td>Writing</td>
+        </tr>
+        <tr>
+            <th class="hour hour1" scope="row">1</th>
+            <td><strong>English</strong></td>
+            <td>Writing</td>
+            <td>Writing</td>
+            <td>Listening</td>
+            <td>Reading</td>
+            <td>Reading</td>
+            <td>Speaking</td>
+            <td>Speaking</td>
+        </tr>
+        <tr>
+            <th class="hour hour2" scope="row">2</th>
+            <td><strong>Programación</strong></td>
+            <td class="important" colspan="7" rowspan="4" style="background: var(--violet); color: var(--white)">
+                <strong>¿Cómo sacar una aplicación de Android?</strong>
+            </td>
+        </tr>
+        <tr>
+            <th class="hour hour3" scope="row">3</th>
+            <td><strong>Programación</strong></td>
+        </tr>
+        <tr>
+            <th class="hour hour4" scope="row">4</th>
+            <td><strong>Programación</strong></td>
+        </tr>
+        <tr>
+            <th class="hour hour5" scope="row">5</th>
+            <td><strong>Programación</strong></td>
+        </tr>
+        <tr>
+            <th class="hour hour6" scope="row">6</th>
+            <td><strong>Programación</strong></td>
+            <td class="important" colspan="7" rowspan="4" style="background: var(--yellow); color: var(--black)">
+                <strong>¿Cómo sacar una aplicación de IOS?</strong>
+            </td>
+        </tr>
+        <tr>
+            <th class="hour hour7" scope="row">7</th>
+            <td><strong>Programación</strong></td>
+        </tr>
+        <tr>
+            <th class="hour hour8" scope="row">8</th>
+            <td><strong>Programación</strong></td>
+        </tr>
+        <tr>
+            <th class="hour hour9" scope="row">9</th>
+            <td><strong>Programación</strong></td>
+        </tr>
+        <tr>
+            <th class="hour hour10" scope="row">10</th>
+            <td><strong>Programación</strong></td>
+            <td class="important" colspan="7" rowspan="2" style="background: var(--blue); color: var(--white)">
+                <strong>Buy me a coffe</strong>
+            </td>
+        </tr>
+        <tr>
+            <th class="hour hour11" scope="row">11</th>
+            <td><strong>Programación</strong></td>
+        </tr>
+        </tbody>
+        <caption>
+            Schedule
+        </caption>
+    </table>
+    <button class="button-3">¡Voy a comer!</button> <!--Add sound for the buttons-->
+    <button class="button-3">¡Voy a caminar!</button>
+    <script
+            data-cfasync="false"
+            data-color="#5F7FFF"
+            data-description="Support me on Buy me a coffee!"
+            data-id="velezlucas1"
+            data-message=""
+            data-name="BMC-Widget"
+            data-position="Right"
+            data-x_margin="18"
+            data-y_margin="18"
+            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    ></script>
+</div>
 </body>
 </html>
