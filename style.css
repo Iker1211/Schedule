@@ -13,13 +13,8 @@
     --font-family: 'Arial', sans-serif;
   }
 
-  html {
-    font-family: var(--font-family);
-  }
-
   body {
-    width: 100%;
-    height: auto;
+    font-family: var(--font-family);
   }
 
   .container {
