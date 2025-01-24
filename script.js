@@ -21,10 +21,10 @@ btn_iniciar.onclick = () => {
   pause_or_continue ++;
 
   if (pause_or_continue % 2 === 0){
-    btn_iniciar.textContent = "Continuar Grindeo";
+    btn_iniciar.textContent = "🏃Continuar Grindeo🏃";
     btn_iniciar.classList.add("button-41");
   } else {
-    btn_iniciar.textContent = "Pausar máquina";
+    btn_iniciar.textContent = "⏸️Pausar máquina⏸️";
     btn_iniciar.classList.remove("button-41");
     btn_iniciar.classList.add("button-42");
   }
