@@ -1,16 +1,28 @@
-const btn_iniciar = document.getElementById("btn");
 const container = document.querySelector(".container");
 const hour = document.querySelectorAll(".hour");
+
+const btn_iniciar = document.getElementById("btn");
+const btn_less_time = document.getElementById("btn-less-time");
+const input_destructivo = document.getElementById("input-destructivo"); 
+const submit = document.querySelector("submit");
 
 let counter = document.createElement('b');
 counter.style.fontSize = '2rem';
 
 let array = Array.from(hour);
 let current_index = 0;
+
+/* Variables para el texto de los botones*/
+let cuenta_atras = false;
+let matando_tiempo = false;
+
+/* Contadores para el texto de los botones */
 let pause_or_continue = 0;
+let regrese_de_la_fumiada = 0;
+
+/* Variables para el contador */
 let count = 3600;
 let toggle = false;
-let cuenta_atras = false;
 
 function change_color(element) {
     element.style.backgroundColor = 'var(--gray)';
@@ -20,6 +32,7 @@ btn_iniciar.onclick = () => {
 
   pause_or_continue ++;
 
+  /* Checking if is even feminine or odd masculine */
   if (pause_or_continue % 2 === 0){
     btn_iniciar.textContent = "🏃Continuar Grindeo🏃";
     btn_iniciar.classList.add("button-41");
@@ -37,6 +50,26 @@ btn_iniciar.onclick = () => {
  toggle = false;
 }
 
+/*  Here im trying to implement the value of the input as the textContent of button*/
+// console.log(input_destructivo.select());
+
+// if (input_destructivo.value === 'señor') {
+
+// }
+
+/* */
+btn_less_time.onclick = () => {
+
+  matando_tiempo = !matando_tiempo;
+  regrese_de_la_fumiada++;
+
+  if (regrese_de_la_fumiada % 2 === 0){
+    btn_less_time.textContent = "🚬Fumarse el tiempo🚬";
+  } else {
+    btn_less_time.textContent = "Regresé de la fumeteada";
+  }
+}
+  
 function start_timer() {
 
   let alarm = new Audio('assets/sounds/alarm.mp3');
@@ -49,6 +82,11 @@ function start_timer() {
       } else  if (toggle && !cuenta_atras) {
         count++;
       }
+
+    if (matando_tiempo) {
+     count--;
+     count--;
+    }  
 
     if (count === 0 && current_index < array.length) {
       change_color(array[current_index]);
@@ -69,4 +107,3 @@ function start_timer() {
 }
 
 start_timer();
-
