@@ -11,11 +11,11 @@
     --font-size-lg: clamp(0.975rem, 0.625vw + 0.82rem, 1.32rem); /* Increased by a quarter */
     --font-size-xl: clamp(1.525rem, 1.4875vw + 1.15625rem, 2.34375rem); /* Half of the original values */
     --font-family: 'Arial', sans-serif;
+    --logic-background: if ( count ) document.body.style.background = "url('assets/backgrounds/ecliptic-graphic-small.jpg')";
 }
 
 body {
     font-family: var(--font-family);
-    text-align: center;
 }
 
 .container {

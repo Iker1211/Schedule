@@ -24,6 +24,10 @@ let regrese_de_la_fumiada = 0;
 let count = 3600;
 let toggle = false;
 
+const logic_background = getComputedStyle(document.documentElement).getPropertyValue('--logic-background');
+
+eval(logic_background);
+
 function change_color(element) {
     element.style.backgroundColor = 'var(--gray)';
 }
