@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function(event) {
+  event.preventDefault();
+});
+
 const aside = document.querySelector(".aside");
 const hour = document.querySelectorAll(".hour");
 
