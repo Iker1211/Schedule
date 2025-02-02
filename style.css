@@ -76,6 +76,10 @@ body {
 }
 
 .aside {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
   background-color: transparent;
   width: minmax(7rem, 20rem);
   height: 100vh;
