@@ -42,11 +42,11 @@ btn_iniciar.onclick = () => {
   /* Checking if is even feminine or odd masculine */
   if (pause_or_continue % 2 === 0){
     btn_iniciar.textContent = "🏃Continuar Grindeo🏃";
-    btn_iniciar.classList.add("button-41");
+    btn_iniciar.classList.add("btn-success");
   } else {
     btn_iniciar.textContent = "⏸️Pausar máquina⏸️";
-    btn_iniciar.classList.remove("button-41");
-    btn_iniciar.classList.add("button-42");
+    btn_iniciar.classList.remove( "btn-sucess");
+    btn_iniciar.classList.add("btn-warning");
   }
 
  if (toggle) {
