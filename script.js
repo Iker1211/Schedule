@@ -1,4 +1,4 @@
-const container = document.querySelector(".container");
+const aside = document.querySelector(".aside");
 const hour = document.querySelectorAll(".hour");
 
 const btn_iniciar = document.getElementById("btn");
@@ -6,8 +6,11 @@ const btn_less_time = document.getElementById("btn-less-time");
 const input_destructivo = document.getElementById("input-destructivo"); 
 const submit = document.querySelector("submit");
 
+
+/* style of counter */
 let counter = document.createElement('b');
 counter.style.fontSize = '2rem';
+counter.style.color = 'var(--white)';
 
 let array = Array.from(hour);
 let current_index = 0;
@@ -105,7 +108,7 @@ function start_timer() {
       }
     } 
 
-    container.appendChild(counter).textContent = count;
+    aside.appendChild(counter).textContent = count;
 
   }, 1000);
 }
