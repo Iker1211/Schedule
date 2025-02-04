@@ -1,6 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(event) {
-  event.preventDefault();
-});
+/* Cómo evitar el problema de la cache(se refresca la página cada x tiempo) */
 
 const aside = document.querySelector(".aside");
 const hour = document.querySelectorAll(".hour");
@@ -8,7 +6,7 @@ const hour = document.querySelectorAll(".hour");
 const btn_iniciar = document.getElementById("btn");
 const btn_less_time = document.getElementById("btn-less-time");
 const input_destructivo = document.getElementById("input-destructivo"); 
-const submit = document.querySelector("submit");
+const submit = document.getElementById("submit");
 
 
 /* style of counter */
@@ -31,12 +29,19 @@ let regrese_de_la_fumiada = 0;
 let count = 3600;
 let toggle = false;
 
+
+/* This is CSS custom property thing */
 const logic_background = getComputedStyle(document.documentElement).getPropertyValue('--logic-background');
 
 eval(logic_background);
 
 function change_color(element) {
     element.style.backgroundColor = 'var(--gray)';
+}
+
+/* To change btn_less_time text */
+submit.onclick = () => {
+  btn_less_time.textContent = `${input_destructivo.value}`;
 }
 
 btn_iniciar.onclick = () => {
@@ -61,23 +66,15 @@ btn_iniciar.onclick = () => {
  toggle = false;
 }
 
-/*  Here im trying to implement the value of the input as the textContent of button*/
-// console.log(input_destructivo.select());
-
-// if (input_destructivo.value === 'señor') {
-
-// }
-
-/* */
 btn_less_time.onclick = () => {
 
   matando_tiempo = !matando_tiempo;
   regrese_de_la_fumiada++;
 
   if (regrese_de_la_fumiada % 2 === 0){
-    btn_less_time.textContent = "🚬Fumarse el tiempo🚬";
+    btn_less_time.textContent = `${input_destructivo.value}`;
   } else {
-    btn_less_time.textContent = "Regresé de la fumeteada";
+    btn_less_time.textContent = "Regresé";
   }
 }
   
