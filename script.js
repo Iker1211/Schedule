@@ -6,8 +6,6 @@ const hour = document.querySelectorAll(".hour");
 const btn_iniciar = document.getElementById("btn");
 const btn_less_time = document.getElementById("btn-less-time");
 const input_destructivo = document.getElementById("input-destructivo"); 
-const submit = document.getElementById("submit");
-
 
 /* style of counter */
 let counter = document.createElement('b');
@@ -40,9 +38,9 @@ function change_color(element) {
 }
 
 /* To change btn_less_time text */
-submit.onclick = () => {
+input_destructivo.addEventListener('input', (event) => {
   btn_less_time.textContent = `${input_destructivo.value}`;
-}
+});
 
 btn_iniciar.onclick = () => {
 
